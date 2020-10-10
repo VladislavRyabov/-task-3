@@ -81,9 +81,20 @@ button, button:hover, button:focus, button:active
     padding: 30px;
     margin: auto;
 }
-.nav-bar {
-	background-color: #000;
-}
 .nav-landing {
 	color: #000;
+}
+
+.container-login {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.navbar {
+	background-color: #000;
+}
+.navbar-brand {
+	color: #fff;
+}
+.nav-link {
+	color: #fff;
 }
