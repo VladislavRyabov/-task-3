@@ -76,6 +76,7 @@ body {
 	background: rgba(255,255,255,0.3);
     padding: 30px;
     margin: auto;
+    margin-bottom: 50px;
 }
 .nav-landing {
 	color: #000;
@@ -103,10 +104,25 @@ body {
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 50px;
 }
 .card-header {
 	background: rgba(255,255,255,0.5);
 }
 .card-body {
 	background: rgba(255,255,255,0.2);
+}
+.footer {
+	margin-bottom: 50px;
+}
+.footer__line {
+	border-top: 1px solid  #000;
+    margin-top: 5px
+}
+.footer__head {
+	font-family: Proxima Nova Regular;
+	font-size: 14px;
+	text-align: center;
+	color: #383838;
+	margin-top: 20px;
 }

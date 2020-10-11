@@ -1,8 +1,8 @@
 <div class="card">
-  <div class="card-header card">
+  <div class="card-header">
     <h2>Forgot your password?</h2>
   </div>
-  <div class="card-body card">
+  <div class="card-body">
   	<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
 	  <%= render "devise/shared/error_messages", resource: resource %>
 
