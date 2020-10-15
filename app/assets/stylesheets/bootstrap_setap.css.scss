@@ -6,6 +6,14 @@ ul, li {
 	margin: 0;
 }
 
+p {
+	margin: 0px;
+    margin-bottom: 0em;
+    font-size: 14px;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
 h1, h2, h3, h4, h5, h6 {
 	font-weight: 700;
 	color: #383838;
@@ -61,6 +69,7 @@ button, button:hover, button:focus, button:active
 	background: rgba(255,255,255,0);
 	border: 1px solid #fff;
 	transition: all 0.5s ease;
+	color: #fff;
 }
 
 .btn:focus {
@@ -127,3 +136,97 @@ body {
 	color: #383838;
 	margin-top: 20px;
 }
+.we {
+	display: flex;
+}
+.wecard {
+	box-shadow: 0px 5px 30px rgba(206, 218, 228, 0.6);
+	text-align: center;
+	padding: 0px 0px 0px;
+	width: 100%;
+	border-radius: 0px;
+}
+.wecard__item_centr {
+	justify-content: space-between;
+	border-bottom: 1px solid #CCCCCC;
+}
+.wecard_left {
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+}
+.wecard_centr {
+	border-top: 1px solid #CCCCCC;
+}
+.wecard_right {
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+.wecard__text {
+	font-size: 20px;
+	margin-left: 20px;
+}
+.wecard__text_centr {
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.wecard__text_right {
+	margin-top: 30px;
+    margin-bottom: 30px;
+}
+.btn_home {
+    font-size: 18px;
+    color: #383838;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0px;
+    border-left: 1px solid #CCCCCC;
+    min-width: 156px;
+    text-align: center;
+    padding: 9px 30px 8px;
+    cursor: pointer;
+}
+.btn_home:hover {
+	background: #383838;
+	border-left: 1px solid #CCCCCC;
+    transition: all 0.5s ease;
+	color: #fff;
+}
+
+.btn_home:focus {
+	box-shadow: none;
+}
+.btn_home:active{
+	color: #383838;
+}
+.bar1 {
+	background: #fff;
+}
+.navbar-toggler-icon {
+	background: #fff;
+}
+
+/* 576-768px */
+@media screen and (max-width: 768px) { 
+	.card {
+		width: 100%;
+	}
+	.we {
+		flex-direction: column;
+	}
+	.wecard__item {
+		border: 1px solid #CCCCCC;
+	}
+	.wecard__item_centr {
+		border-left: 1px solid #CCCCCC;
+		border-top: 1px solid #CCCCCC;
+		border-right: 1px solid #CCCCCC;
+	}
+	.wecard_left {
+		border: 1px solid #CCCCCC;
+	}
+	.wecard_centr {
+		border: 1px solid #CCCCCC;
+	}
+	.wecard_right {
+		border: 1px solid #CCCCCC;
+	}
+}	
