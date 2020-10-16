@@ -26,11 +26,17 @@ h1 {
 	color: #383838;
 }
 h2 {
-	font-family: Bitter Bold;
+	font-weight: 900;
 	font-size: 42px;
 	line-height: 130%;
 	letter-spacing: 0.01em;
-	text-transform: uppercase;
+	color: #383838;	
+}
+h3 {
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 130%;
+	letter-spacing: 0.01em;
 	color: #383838;	
 }
 a, a:hover, a:active {
@@ -85,6 +91,7 @@ body {
 	background: rgba(255,255,255,0.3);
     padding: 30px;
     margin: auto;
+    width: 50%;
     margin-bottom: 50px;
 }
 .nav-landing {
@@ -173,6 +180,23 @@ body {
 	margin-top: 30px;
     margin-bottom: 30px;
 }
+.btn_show {
+	font-size: 14px;
+    color: #383838;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    border: 1px solid #383838;
+    width: 156px;
+    text-align: center;
+    padding: 5px 10px 4px;
+    cursor: pointer;
+}
+.btn_show:hover {
+	background: #383838;
+	border: 1px solid #383838;
+	transition: all 0.5s ease;
+	color: #fff;
+}
 .btn_home {
     font-size: 18px;
     color: #383838;
@@ -203,10 +227,33 @@ body {
 .navbar-toggler-icon {
 	background: #fff;
 }
+.wecard__wrap {
+	justify-content: space-between;
+}
+.wecard__wrapper {
+	padding-left: 5px;
+	width: 72%;
+    text-align: initial;
+}
+.wecard__cover {
+	padding-right: 5px;
+}
+.wecard__word {
+	color: #383838
+}
+.wecard__word:hover {
+	color: #8e8e8e;
+}
 
 /* 576-768px */
 @media screen and (max-width: 768px) { 
+	.wecard__wrapper {
+		width: 50%;
+	}
 	.card {
+		width: 100%;
+	}
+	.jumbotron {
 		width: 100%;
 	}
 	.we {
