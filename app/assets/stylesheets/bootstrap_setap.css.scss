@@ -39,6 +39,13 @@ h3 {
 	letter-spacing: 0.01em;
 	color: #383838;	
 }
+h3 {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	color: #383838;	
+}
 a, a:hover, a:active {
 	text-decoration: none;
 }
@@ -202,7 +209,6 @@ body {
     color: #383838;
     background: rgba(255, 255, 255, 0.5);
     border-radius: 0px;
-    border-left: 1px solid #CCCCCC;
     min-width: 156px;
     text-align: center;
     padding: 9px 30px 8px;
@@ -232,8 +238,9 @@ body {
 }
 .wecard__wrapper {
 	padding-left: 5px;
-	width: 72%;
+	width: 80%;
     text-align: initial;
+    margin-top: 5px;
 }
 .wecard__cover {
 	padding-right: 5px;
@@ -245,11 +252,49 @@ body {
 	color: #8e8e8e;
 }
 
+
+
+
+.conntent {
+	background: rgba(255, 255, 255, 0.5);
+	padding: 10px;
+	
+}
+.offer {
+	background: rgba(255, 255, 255, 0.5);
+	margin-top: 10px;
+	justify-content: flex-end;
+}
+.offer_last {
+	background: rgba(255, 255, 255, 0.5);
+	justify-content: flex-end;
+}
+.btn_conntent {
+	font-size: 14px;
+    color: #383838;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    border: 1px solid #383838;
+    width: 156px;
+    text-align: center;
+    padding: 5px 10px 4px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn_conntent:hover {
+	background: #383838;
+	border: 1px solid #383838;
+	transition: all 0.5s ease;
+	color: #fff;
+}
+
+
+ 
+
+
+
 /* 576-768px */
 @media screen and (max-width: 768px) { 
-	.wecard__wrapper {
-		width: 50%;
-	}
 	.card {
 		width: 100%;
 	}

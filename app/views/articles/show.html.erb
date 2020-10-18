@@ -1,19 +1,60 @@
 <div class="card">
+  <div class="card-header">
+    <h4>Ticket</h4>
+  </div>
   <div class="card-body">
-	<p>
-	  <strong>Email:</strong>
-	  <%= @article.email %>
-	</p>
+		<p>
+		  <strong>Email:</strong>
+		  <%= @article.email %>
+		</p>
 
-	<p>
-	  <strong>Text:</strong>
-	  <%= @article.text %>
-	</p>
- </div>
+		<p>
+		  <strong>Text:</strong>
+		  <%= @article.text %>
+		</p>
+	</div>
+  <div class="card-header">
+    <h4>Edit Article</h4>
+  </div>
+<div class="card-body">
+  	
+    <%= form_with model: @article, local: true do |form| %>
+
+      <% if @article.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= pluralize(@article.errors.count, "error") %> prohibited
+            this article from being saved:
+          </h2>
+          <ul>
+            <% @article.errors.full_messages.each do |msg| %>
+              <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+
+      <p>
+        <%= form.label :email %><br>
+        <%= form.text_field :email, class: "form-control" %>
+      </p>
+
+      <p>
+        <%= form.label :text %><br>
+        <%= form.text_area :text, class: "form-control" %>
+      </p>
+
+      <p>
+        <%= form.submit class: "btn btn-primary" %>
+      </p>
+
+    <% end %>
+  </div>
  <div class="card-header">
-  	<%= link_to 'Edit', edit_article_path(@article), class: "btn_show" %> 
-	<%= link_to 'Back', root_path, class: "btn_show" %>
+  <%= link_to 'Back', root_path, class: "btn_show" %>
  </div>
 </div>
+
+
 
 

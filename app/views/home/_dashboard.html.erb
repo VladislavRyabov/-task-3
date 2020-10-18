@@ -1,52 +1,46 @@
-<div class="we">
-	<div class="wecard wecard_left">
-		<div class="wecard__item wecard__item_centr d-flex">
-			<p class="wecard__text wecard__text_centr">Ticket</p>
-			<%= link_to 'New Ticket', new_article_path, class: "btn_home" %>
-
-	    </div>
-	    <div class="wecard__lists">
-	    	<% @articles.each do |article| %>
-		    <tr>
-		    	<div class="wecard__wrap d-flex">
-		    		<div class="wecard__wrapper">
-		    			<td><%= link_to article.text, article_path(article), class:'wecard__word' %></td>
-		    		</div>
-		    		<div class="wecard__cover">
-		    			<td><%= link_to 'Edit', edit_article_path(article) %></td>
-				        <td><%= link_to 'Destroy', article_path(article),
-			              method: :delete,
-			              data: { confirm: 'Are you sure?' } %></td>
-		    		</div>
-		    	</div>
-			</tr>
-	    <% end %> 
-	    </div>
-	</div>
-	<div class="wecard wecard_centr">
-		<div class="wecard__item wecard__item_centr d-flex">
-			<p class="wecard__text wecard__text_centr">User</p>
-			<%= link_to 'New User', new_article_path, class: "btn_home" %>
-	    </div>	
-	    <div class="wecard__lists">
-	    	<% @articles.each do |article| %>
-		    <tr>
-		    	<div class="wecard__wrap d-flex">
-		    		<div class="wecard__wrapper">
-		    			<td><%= link_to article.email, new_article_path, class:'wecard__word' %></td>
-		    		</div>
-		    	</div>
-			</tr>
-	    <% end %> 
-	    </div>
-	</div>
-	<div class="wecard wecard_right">
-		<div class="wecard__item wecard__item_centr d-flex">
-			<p class="wecard__text wecard__text_right">Status</p>
-	    </div>
-	    <div class="wecard__item wecard__item_right d-flex">
-			<p class="wecard__text wecard__text_right">Status item</p>
-	    </div>
+<div class="row">
+	<div class="col-12">
+		<div d-flex>
+			<div class="wecard__item wecard__item_centr d-flex">
+				<%= link_to 'New Ticket', new_article_path, class: "btn_home" %>
+				<%= link_to 'New User', new_article_path, class: "btn_home" %>
+			</div>
+		</div>
 	</div>
 </div>
+<% @articles.each do |article| %>	
+	<div class="row">
+		<div class="offer d-flex">
+			<div class="offer_nav">
+	    		<td><%= link_to article.email, new_article_path, class:'wecard__word' %></td>
+    		</div>
+    	</div>
+	 	<div class="conntent">
+	 		<div class="wecard__wt">
+	    		<td><%= link_to article.text, article_path(article), class:'wecard__word' %></td>
+			</div>
+		</div>
+		<div class="offer_last d-flex">
+			<div class="offer_nav">
+				<td><%= link_to 'Status', article_path(article),
+			          method: :delete,
+			          data: { confirm: 'Are you sure?' }, class: "btn_conntent" %></td>
+				</tr>
+			</div>
+			<div class="offer_nav">
+				<td><%= link_to 'Destroy', article_path(article),
+			          method: :delete,
+			          data: { confirm: 'Are you sure?' }, class: "btn_conntent" %></td>
+				</tr>
+			</div>
+		</div>
+	</div>
+<% end %>
+
+
+
+			 
+
+
+
   
