@@ -39,7 +39,7 @@ h3 {
 	letter-spacing: 0.01em;
 	color: #383838;	
 }
-h3 {
+h4 {
 	font-weight: 700;
 	font-size: 20px;
 	line-height: 130%;
@@ -205,8 +205,11 @@ body {
 	color: #fff;
 }
 .btn_home {
-    font-size: 18px;
-    color: #383838;
+    font-weight: 700;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	color: #383838;	
     background: rgba(255, 255, 255, 0.5);
     border-radius: 0px;
     min-width: 156px;
@@ -216,8 +219,7 @@ body {
 }
 .btn_home:hover {
 	background: #383838;
-	border-left: 1px solid #CCCCCC;
-    transition: all 0.5s ease;
+	transition: all 0.5s ease;
 	color: #fff;
 }
 
@@ -290,6 +292,13 @@ body {
 	border: 1px solid #383838;
 	transition: all 0.5s ease;
 	color: #fff;
+}
+.wecard__words {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 130%;
+	letter-spacing: 0.01em;
+	color: #383838;
 }
 
 
