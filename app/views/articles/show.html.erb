@@ -34,6 +34,26 @@
         </div>
       <% end %>
 
+      <div class="status">
+        <p>Status</p>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio1">Status</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">Status</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">Status</label>
+        </div>
+        <div class="custom-control custom-radio">
+          <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+          <label class="custom-control-label" for="customRadio2">Status</label>
+        </div>
+      </div>
+      
       <p>
         <%= form.label :email %><br>
         <%= form.text_field :email, class: "form-control" %>
@@ -41,14 +61,14 @@
 
       <p>
         <%= form.label :text %><br>
-        <%= form.text_area :text, class: "form-control" %>
+        <%= form.text_area :text, class: "form form-control" %>
       </p>
 
       <p>
         <%= form.submit class: "btn btn-primary" %>
       </p>
 
-    <% end %>
+<% end %>
   </div>
  <div class="card-header">
   <%= link_to 'Back', root_path, class: "btn_show" %>
