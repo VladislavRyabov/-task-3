@@ -14,13 +14,7 @@
 		<div class="row">
 			<div class="offer d-flex">
 				<td><%= link_to article.email, new_article_path, class:'wecard__words' %></td>
-				<div class="offer_nav">
-					<td><%= link_to 'Status', article_path(article), class: "btn_status" %></td>
-					<td><%= link_to 'Destroy', article_path(article),
-				          method: :delete,
-				          data: { confirm: 'Are you sure?' }, class: "btn_conntent" %></td>
-				</div>
-	    	</div>
+			</div>
 		 	<div class="conntent">
 		 		<div class="wecard__wt">
 		    		<td><%= link_to article.text, article_path(article), class:'wecard__word' %></td>
